@@ -2,6 +2,15 @@
 
 Please install [anaconda](https://www.anaconda.com/products/distribution#linux) for easy python environment managing. You can follow [this link](https://docs.anaconda.com/anaconda/install/linux/#installation)
 
+then install the python environment :
+
+```bash
+conda env create -f env.yml
+```
+
+It will create the conda environment `s3_preprocessing` with all dependencies for this repo. You shoud be able to activate this env using `conda activate s3_preprocessing`.
+
+
 # instruction
 
 To use this tool, please update your `~/.aws/credentials` file with your aws access key and secret access key.
