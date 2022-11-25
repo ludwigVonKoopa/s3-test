@@ -6,3 +6,6 @@ help:
 run:
 	@echo "run"
 	bash upload_to_s3.sh
+
+test:
+	pytest test.py -v

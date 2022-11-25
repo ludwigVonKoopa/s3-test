@@ -1,4 +1,4 @@
-# s3-test# installation
+# installation
 
 Please install [anaconda](https://www.anaconda.com/products/distribution#linux) for easy python environment managing. You can follow [this link](https://docs.anaconda.com/anaconda/install/linux/#installation)
 
@@ -17,6 +17,10 @@ aws_secret_access_key=uvwxyz1234567890+abcd
 
 It will be used by python s3 lib to connect to your account to retrieve the netcdf file and push it to your bucket
 
+# test
+
+run `make test` to sart tests. It should tell you if your credentials have been setup correctly
+
 # start
 
 to perform the processing :
@@ -25,3 +29,5 @@ to perform the processing :
 
 if you want to test the processing with s3 uploading, please update the `upload_to_s3.sh` file with your s3 bucket name.
 Else, it will transform era5 file into a parquet file locally.
+
+Please see the notebook file `study.ipynb` to see an example of processing.
